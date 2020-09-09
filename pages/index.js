@@ -1,19 +1,19 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from "next/head";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className='container'>
       <Head>
         <title>Next Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <main>
         <Header />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
+        <p className='description'>
+          Get started by editinmg <code>pages/index.js</code>
         </p>
       </main>
 
@@ -60,5 +60,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
