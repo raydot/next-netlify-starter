@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
+// contentful
+import { fetchEntries } from "@utils/contentfulPosts";
+import Post from "@components/Post";
 
 export default function Home() {
   return (
@@ -12,9 +15,18 @@ export default function Home() {
 
       <main>
         <Header />
-        <p className='description'>
-          Get started by editinmg <code>pages/index.js</code>
-        </p>
+        <div className='posts'>
+          {posts.map((p) => {
+            return (
+              <Post
+                key={p.date}
+                date={p.date}
+                image={p.image.fields}
+                title={p.title}
+              />
+            );
+          })}
+        </div>
       </main>
 
       <Footer />
@@ -32,7 +44,7 @@ export default function Home() {
           padding: 5rem 0;
           flex: 1;
           display: flex;
-          flex-direction: column;`
+          flex-direction: column;
           justify-content: center;
           align-items: center;
         }
@@ -61,4 +73,18 @@ export default function Home() {
       `}</style>
     </div>
   );
+}
+
+// at the bottom of your component file
+export async function getStaticProps() {
+  const res = await fetchEntries();
+  const posts = await res.map((p) => {
+    return p.fields;
+  });
+
+  return {
+    props: {
+      posts,
+    },
+  };
 }
