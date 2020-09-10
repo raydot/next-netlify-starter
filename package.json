@@ -1,6 +1,14 @@
 {
   "name": "next-netlify-starter",
   "version": "0.1.1",
+  "description": "Basic Next/Netlify/React sandbox",
+  "homepage": "https://github.com/raydot/next-netlify-starter",
+  "keywords": [
+    "next",
+    "contentful",
+    "react"
+  ],
+  "author": "Dave Kanter",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,7 +19,16 @@
   "dependencies": {
     "contentful": "^7.14.6",
     "next": "9.5.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.4.1",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.0"
   }
 }
