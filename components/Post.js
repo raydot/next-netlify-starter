@@ -13,4 +13,4 @@ function Post({ date, image, title }) {
   );
 }
 
-export default post;
+export default Post;
