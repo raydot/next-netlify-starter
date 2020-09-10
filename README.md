@@ -1,6 +1,6 @@
 # Next + Netlify Starter
 
-[Here are the complete instructions for how to use.](https://www.netlify.com/blog/2020/08/17/integrate-next.js-contentful/)
+[Here are the complete instructions for using the starter.](https://www.netlify.com/blog/2020/08/17/integrate-next.js-contentful/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ed50f56e-4fc2-4c98-8b66-1e5074c6f3d3/deploy-status)](https://app.netlify.com/sites/next-starter/deploys)
 
